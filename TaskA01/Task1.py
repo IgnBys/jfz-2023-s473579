@@ -14,7 +14,7 @@ def openFile(fileName,hamletArray = ['H','a', 'm', 'l', 'e', 't']):
                         counter = 0
                         repCounter+=1      #if in one row more than one Hamlet it will write the row only once
                         if repCounter == 1:
-                            print(row.strip())
+                            print(row.strip())  #use function strip() only for readability
                 else:
                     checkWord = ''
                     counter = 0
