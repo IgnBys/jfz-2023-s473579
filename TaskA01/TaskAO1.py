@@ -16,7 +16,7 @@ def openFile(fileName,hamletArray = ['H','a', 'm', 'l', 'e', 't'], hamletFullWor
             line += character
 
             if len(checkWord) < len(hamletFullWord):
-                if character == hamletArray[counter]:
+                if re.match(hamletArray[counter], character):
                     checkWord+=character
                     counter += 1
                 else:
